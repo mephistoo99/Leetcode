@@ -6,7 +6,7 @@ struct ListNode {
     struct ListNode* next;
 };
 
-/*use Floyds cycle finding algorithm*/
+/*used Floyd's cycle finding algorithm*/
 
 bool hasCycle(struct ListNode *head) {
     struct ListNode* fast = head;
@@ -20,8 +20,4 @@ bool hasCycle(struct ListNode *head) {
             return(true);
     }
     return false;
-
-
-
-
 }
