@@ -37,8 +37,6 @@ static struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* l
     }
     return (ret);
 }
-
-
 struct ListNode* mergeKLists(struct ListNode** lists, int listsSize)
 {
     int count = 0;
