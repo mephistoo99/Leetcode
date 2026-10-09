@@ -5,11 +5,9 @@ struct ListNode {
     int val;
     struct ListNode *next;
 };
-
 static int ft_lstsize(struct ListNode *lst)
 {
     int count;
-
     count = 0;
     if(!lst)
         return 0;
@@ -19,13 +17,12 @@ static int ft_lstsize(struct ListNode *lst)
     }
     return (count);
 }
-
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n)
 {
-    int sizeoflist = ft_lstsize(head);
-    int count = 1;
     struct ListNode *previous;
     struct ListNode *del;
+    int sizeoflist = ft_lstsize(head);
+    int count = 1;
     previous = head;
     
     if(n>sizeoflist)
@@ -35,11 +32,9 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n)
         head = head->next;
         free(previous);
         return (head);
-
     }
-    
-    
-    while(count < sizeoflist - n){
+    while(count < sizeoflist - n)
+    {
         previous = previous->next;
         count++;
     }
@@ -47,6 +42,4 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n)
     previous->next = del->next;
     free(del);
     return (head);
-
-    
 }
