@@ -18,8 +18,6 @@ static int lstsize(struct ListNode *lst)
     }
     return (count);
 }
-
-
 struct ListNode* middleNode(struct ListNode* head)
 {
     int size = lstsize(head);
