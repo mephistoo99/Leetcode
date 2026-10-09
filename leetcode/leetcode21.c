@@ -5,9 +5,6 @@ struct ListNode {
     struct ListNode *next;
 };
 
-
-
-
 #include <stdlib.h>
 
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2)
