@@ -4,7 +4,6 @@ struct ListNode {
     int val;
     struct ListNode* next;
 };
-
 static int lstsize(struct ListNode *lst)
 {
     int count;
